@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: multitool-daemonset
+spec:
+  selector:
+    matchLabels:
+      name: multitool
+  template:
+    metadata:
+      labels:
+        name: multitool
+    spec:
+      hostPID: true
+      hostIPC: true
+      hostNetwork: true
+      containers:
+      - name: multitool
+        image: praqma/network-multitool
+        volumeMounts:
+        - name: var-log
+          mountPath: /host/var/log
+          readOnly: true
+      volumes:
+      - name: var-log
+        hostPath:
+          path: /var/log
+          type: Directory
