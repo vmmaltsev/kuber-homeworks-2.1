@@ -15,6 +15,10 @@
 
 Ответ:
 
+манифест Deployment доступен по ссылке https://github.com/vmmaltsev/kuber-homeworks-2.1/blob/main/busybox-multitool-deployment.yaml
+
+![alt text](https://github.com/vmmaltsev/screenshot/blob/main/Screenshot_123.png)
+
 ---
 
 Задание 2
@@ -29,3 +33,6 @@
 
 Ответ:
 
+Манифест Deployment доступен по ссылке https://github.com/vmmaltsev/kuber-homeworks-2.1/blob/main/multitool-daemonset.yaml
+
+![alt text](https://github.com/vmmaltsev/screenshot/blob/main/Screenshot_124.png)
